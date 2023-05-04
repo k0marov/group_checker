@@ -1,4 +1,4 @@
-#!/usr/bin/bash 
+#!/bin/bash 
 
 group1=$1
 group2=$2 

@@ -1,4 +1,4 @@
-#!/usr/bin/bash 
+#!/bin/bash 
 
 group1=$1
 group2=$2 
@@ -9,7 +9,9 @@ count2=`cat $group2 | wc -l`
 if [[ $count1 -eq $count2 ]] 
 then
 	echo "В группах одинаковое количество человек."
+	exit 0 
 else
 	echo "В группах НЕ одинаковое количество человек."
+	exit 1
 fi 
 
