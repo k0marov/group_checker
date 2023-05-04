@@ -4,6 +4,7 @@
 
 if [[ ! $? == "0" ]] 
 then
+	echo "Tests failed for good case" 
 	exit 1 
 fi 
 
@@ -11,6 +12,7 @@ fi
 
 if [[ $? == "0" ]] 
 then 
+	echo "Tests failed for bad case" 
 	exit 1
 fi 
 
