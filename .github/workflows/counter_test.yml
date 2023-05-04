@@ -29,6 +29,13 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      - name: Test unique checker
+        run: |
+          chmod +x unique_checker.sh 
+          cd tests/unique_checker
+          chmod +x test.sh 
+          ./test.sh
+
       - name: Test count checker
         run: |
           chmod +x count_checker.sh 

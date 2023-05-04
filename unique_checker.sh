@@ -22,7 +22,9 @@ do
 	if [[ $? == "0" ]] 
 	then 
 		echo "Существует больше одного $stud"
+		exit 1
 	fi
 done
+
 
 
